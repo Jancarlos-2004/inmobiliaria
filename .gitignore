@@ -1,0 +1,39 @@
+# ============================================================
+# .gitignore - Proyecto Inmobiliaria UTS (Nexus Living Co)
+# ============================================================
+
+# 1. Credenciales y Archivos de Configuracion Sensibles
+WEB-INF/db.properties
+!WEB-INF/db.properties.example
+
+# 2. Archivos Compilados (.class)
+*.class
+WEB-INF/classes/**/*.class
+bin/
+build/
+target/
+
+# 3. Archivos de Entorno de Desarrollo (IDEs)
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+.metadata/
+
+# 4. Logs y Archivos Temporales
+*.log
+*.tmp
+*.bak
+parcial_doc_extracted.txt
+parcial_requisitos.txt
+
+# 5. Sistema Operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 6. Archivos de Empaquetado
+*.war
+*.ear

@@ -1,0 +1,15 @@
+digraph MER {
+  rankdir=LR; node [shape=box, style=rounded];
+  usuarios -> perfiles [label="1:1"];
+  usuarios -> propiedades [label="1:N agente"];
+  ciudades -> propiedades [label="1:N"];
+  tipos_propiedades -> propiedades [label="1:N"];
+  propiedades -> imagenes_propiedades [label="1:N"];
+  usuarios -> usuarios_roles [label="N:M"]; usuarios_roles -> roles;
+  propiedades -> propiedades_caracteristicas [label="N:M"]; propiedades_caracteristicas -> caracteristicas;
+  usuarios -> citas [label="1:N cliente"]; propiedades -> citas [label="1:N"];
+  usuarios -> solicitudes [label="1:N cliente"]; propiedades -> solicitudes [label="1:N"];
+  solicitudes -> documentos_solicitudes [label="1:N"];
+  usuarios -> favoritos [label="N:M"]; favoritos -> propiedades;
+  usuarios -> auditoria [label="1:N"];
+}

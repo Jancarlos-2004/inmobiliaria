@@ -1,0 +1,8 @@
+Coloca aqui el archivo .jar del conector de MySQL, por ejemplo:
+mysql-connector-j-9.x.x.jar
+
+Descargalo desde: https://dev.mysql.com/downloads/connector/j/
+(elige el paquete "Platform Independent", formato ZIP, y extrae el .jar de adentro)
+
+Sin este archivo, la app compilara pero fallara al conectar a la base de datos
+(Class.forName("com.mysql.cj.jdbc.Driver") lanzara ClassNotFoundException).
