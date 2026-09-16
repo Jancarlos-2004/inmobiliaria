@@ -1,0 +1,25 @@
+# ============================================================
+# PLANTILLA DE CONFIGURACION DE BASE DE DATOS (db.properties)
+# Proyecto Inmobiliaria UTS - Nexus Living Co
+# ============================================================
+# Copia este archivo como "db.properties" y completa tus datos.
+# NUNCA subas db.properties con contrasenas reales a repositorios publicos.
+
+# Modo activo de conexion: "local" o "remota"
+modo=local
+
+# ------------------------------------------------------------
+# 1. Conexion Local (XAMPP / MySQL Localhost)
+# ------------------------------------------------------------
+local.driver=com.mysql.cj.jdbc.Driver
+local.url=jdbc:mysql://localhost:3306/inmobiliaria?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+local.usuario=root
+local.password=
+
+# ------------------------------------------------------------
+# 2. Conexion Remota (Nube / Clever Cloud / Railway / Aiven)
+# ------------------------------------------------------------
+remota.driver=com.mysql.cj.jdbc.Driver
+remota.url=jdbc:mysql://<TU_HOST_REMOTA>:3306/<TU_BD_REMOTA>
+remota.usuario=<TU_USUARIO_REMOTA>
+remota.password=<TU_PASSWORD_REMOTA>
